@@ -8,20 +8,6 @@ body{
     background-color: aquamarine;
 }
 
-#pfp {
-  display: inline-block;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 10px;
-}
-
-#pfp img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Keyframes */
 @keyframes change-background {
     0% {
       background-color: red;
@@ -39,3 +25,29 @@ body{
       background-color: red;
     }
   }
+
+#pfp {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 2.5s ease-in-out;
+    margin: 60px;
+  }
+  
+  #pfp:hover {
+    transform: rotate(1800deg) scale(2.5);
+  }
+  
+  #pfp img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #pfp:hover {
+      transform: none;
+    }
+  }
+
+  
