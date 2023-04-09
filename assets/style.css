@@ -4,6 +4,7 @@ html{
 }
 
 body{
+    /* animation: change-background 1s ease infinite; */
     background-color: aquamarine;
 }
 
@@ -11,6 +12,7 @@ body{
   display: inline-block;
   border-radius: 50%;
   overflow: hidden;
+  margin: 10px;
 }
 
 #pfp img {
@@ -18,3 +20,22 @@ body{
   max-width: 100%;
   height: auto;
 }
+
+/* Keyframes */
+@keyframes change-background {
+    0% {
+      background-color: red;
+    }
+    25% {
+      background-color: blue;
+    }
+    50% {
+      background-color: green;
+    }
+    75% {
+      background-color: pink;
+    }
+    100% {
+      background-color: red;
+    }
+  }
