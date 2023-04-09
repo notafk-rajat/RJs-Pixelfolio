@@ -5,7 +5,9 @@ html{
 
 body{
     /* animation: change-background 1s ease infinite; */
+    cursor: url('cursor.png'), auto;
     background-color: aquamarine;
+
 }
 
 @keyframes change-background {
